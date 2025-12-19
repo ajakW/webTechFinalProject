@@ -1,0 +1,5 @@
+I used a List for storing the employee objects and a Map for each employee object to store the day of the week and daily hours worked. This is because a list is more flexible, while a Map provides a key-value relationship between days and hours. Overall, this structure makes it easier to add or remove employees and update hours.
+
+I implemented the Comparable interface in the Employee class with the compareTo method and used Collections.sort(employees), which used the natural ordering defined by the compareTo. Which is sorted based on total hours worked, and in the case of the total hours worked being the same, it is sorted based on names.
+
+No change to the code because it incorporates an increase in the number of employees.

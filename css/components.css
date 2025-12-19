@@ -1,0 +1,409 @@
+/* ===========================
+   COMPONENT STYLES
+   =========================== */
+
+/* ===========================
+   BUTTONS (Consolidated)
+   =========================== */
+
+/* Base Button */
+.btn,
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Primary Button (Green) */
+.btn-primary,
+button:not([class]) {
+    background: #7A9B7A;
+    color: white;
+}
+
+.btn-primary:hover,
+button:not([class]):hover {
+    background: #6A8B6A;
+}
+
+/* Secondary Button (Blue) */
+.btn-secondary,
+.btn-resume {
+    background: #5B8FA3;
+    color: white;
+}
+
+.btn-secondary:hover,
+.btn-resume:hover,
+.btn-resume:visited,
+.btn-resume:active,
+.btn-resume:focus {
+    background: #4A7A8F;
+    text-decoration: none !important;
+    color: white;
+}
+
+/* Pause Button */
+.btn-pause {
+    background: #7A9B7A;
+    color: white;
+}
+
+.btn-pause:hover {
+    background: #6A8B6A;
+}
+
+/* Export Button */
+.btn-export {
+    background: #5B8FA3;
+    color: white;
+}
+
+.btn-export:hover {
+    background: #4A7A8F;
+}
+
+/* Delete Button (Danger) */
+.btn-delete,
+.btn-danger,
+.btn-sm.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-delete:hover,
+.btn-danger:hover,
+.btn-sm.btn-danger:hover {
+    background: #c82333;
+}
+
+/* Warning Button */
+.btn-warning,
+.btn-sm.btn-warning {
+    background: #ffc107;
+    color: #000;
+}
+
+.btn-warning:hover,
+.btn-sm.btn-warning:hover {
+    background: #e0a800;
+}
+
+/* Small Buttons */
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.9em;
+}
+
+.btn-sm.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-sm.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Large Buttons */
+.btn-lg,
+.btn-primary-large,
+.btn-secondary-large {
+    padding: 18px 35px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.btn-primary-large {
+    background: white;
+    color: #5B8FA3;
+}
+
+.btn-primary-large:hover {
+    background: #F5F5F5;
+    transform: translateY(-2px);
+}
+
+.btn-secondary-large {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary-large:hover {
+    background: white;
+    color: #5B8FA3;
+}
+
+/* Story Buttons (Landing Page) */
+.btn-story-primary,
+.btn-story-secondary {
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.btn-story-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-story-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-story-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-story-secondary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Learn More Buttons */
+.btn-learn-more,
+.btn-learn-more-story {
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.btn-learn-more-story {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-learn-more-story:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-learn-more {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-learn-more:hover {
+    background: white;
+    color: #333;
+}
+
+/* Buy Now Button */
+.btn-buy-now {
+    background: #ff6b35;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.btn-buy-now:hover {
+    background: #e55a2b;
+    transform: translateY(-2px);
+}
+
+/* Reset/Convert Buttons */
+.btn-reset {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-reset:hover {
+    background: #5a6268;
+}
+
+.btn-convert {
+    background: #28a745;
+    color: white;
+}
+
+.btn-convert:hover {
+    background: #218838;
+}
+
+/* Disabled State */
+button:disabled,
+.btn:disabled {
+    background: #B8C5B8;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* ===========================
+   FORMS
+   =========================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2C2C2C;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D4A574;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #2C2C2C;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #5B8FA3;
+    box-shadow: 0 0 0 2px rgba(91, 143, 163, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 1.1em;
+    resize: vertical;
+    background-color: #FFFFFF;
+    border: 1px solid #D4A574;
+    border-radius: 4px;
+    color: #2C2C2C;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #5B8FA3;
+    box-shadow: 0 0 0 2px rgba(91, 143, 163, 0.1);
+}
+
+form {
+    margin: 20px 0;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+
+.file-card {
+    margin-top: 15px;
+    padding: 15px;
+    background: #FFFFFF;
+    border-left: 4px solid #5B8FA3;
+    border-radius: 4px;
+    font-size: 0.95em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.file-card strong {
+    color: #1A1A1A;
+}
+
+/* ===========================
+   ALERTS & MESSAGES
+   =========================== */
+
+.error,
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+.success,
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+.alert {
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   BADGES
+   =========================== */
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.badge-admin {
+    background: #007bff;
+    color: white;
+}
+
+.badge-user {
+    background: #6c757d;
+    color: white;
+}
+
+/* ===========================
+   TABLES
+   =========================== */
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.user-table tr:hover {
+    background: #f8f9fa;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-style: italic;
+}

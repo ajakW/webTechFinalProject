@@ -1,0 +1,325 @@
+/* ===========================
+   DASHBOARD LAYOUT
+   =========================== */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+.dashboard-sidebar {
+    width: 280px;
+    background: white;
+    border-right: 1px solid var(--border);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.dashboard-main {
+    flex: 1;
+    margin-left: 280px;
+    /* Offset for fixed sidebar */
+    padding: 40px;
+    background: var(--bg-body);
+}
+
+/* Sidebar Elements */
+.sidebar-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.profile-info {
+    overflow: hidden;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.profile-email {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sidebar-search {
+    margin-bottom: 20px;
+}
+
+.sidebar-search input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    color: var(--text-main);
+    background: white;
+    transition: all 0.2s;
+}
+
+.sidebar-search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(91, 143, 163, 0.1);
+}
+
+.sidebar-search input::placeholder {
+    color: var(--text-light);
+}
+
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.nav-item {
+    padding: 12px 16px;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: rgba(91, 143, 163, 0.1);
+    color: var(--primary);
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Home Button - Primary Style */
+.home-item {
+    background: var(--primary);
+    color: white !important;
+    text-align: center;
+    font-weight: 600;
+}
+
+.home-item:hover {
+    background: var(--primary-dark);
+    color: white !important;
+    transform: translateY(-1px);
+}
+
+/* Logout Button - Danger Style */
+.logout-item {
+    background: transparent;
+    color: #dc3545 !important;
+    border: 1px solid #dc3545;
+    text-align: center;
+    font-weight: 600;
+}
+
+.logout-item:hover {
+    background: #dc3545;
+    color: white !important;
+    border-color: #dc3545;
+    transform: translateY(-1px);
+}
+
+/* Dashboard Grid */
+.sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.session-card {
+    background: var(--surface-glass);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-lg);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.session-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.session-header {
+    margin-bottom: 15px;
+}
+
+.session-title {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+}
+
+.session-meta {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    background: #f1f5f9;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.session-progress {
+    margin: 15px 0;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Continue / Read Again Buttons */
+.btn-resume {
+    background: #5B8FA3 !important;
+    color: white !important;
+    border: none !important;
+    text-align: center;
+    border-radius: var(--radius-sm);
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-resume:hover {
+    background: #4A7A8F !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(91, 143, 163, 0.2);
+}
+
+/* Read Again Specific Style */
+.btn-completed-action {
+    background: #7A9B7A !important;
+    /* Green */
+}
+
+.btn-completed-action:hover {
+    background: #6A8B6A !important;
+    box-shadow: 0 4px 6px rgba(122, 155, 122, 0.2);
+}
+
+/* Status Indicators */
+.status-completed .progress-fill {
+    background: #10b981;
+    /* Green */
+}
+
+.btn-delete {
+    background: transparent !important;
+    color: #ef4444 !important;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: 1px solid #ef4444 !important;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+}
+
+.btn-delete:hover {
+    background: #ef4444 !important;
+    color: white !important;
+    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+}
+
+
+/* Stats Cards (used in Admin View too) */
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Responsive Dashboard for new styles */
+@media (max-width: 900px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        min-height: auto;
+    }
+
+    .dashboard-main {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+a) Analyze the recorded times by answering the following: 
+1. How does increasing data size affect population time? 
+Increasing the data size increases the population time as more data is being created 
+the more time it takes. As observed with 10,000 dataset it took 6.06 seconds while it 
+increased from that to 38.84 seconds with 50,000 dataset and lastly for 100,000 
+dataset the population time increased to 60 seconds. 
+
+2. How does it affect search time? 
+The search time increases with the increased data time; for 10,000 dataset 
+"Name50000," the search time took 0.02 seconds. While for 50,000 dataset 
+search time took 0.06 seconds and 100,000 dataset search time took 0.08 
+seconds 
+
+3. What conclusions can be drawn about Excel’s performance with large datasets? 
+Excel performance reduces with increasing large datasets, tending to be slow when 
+creating large data and retrieving information in the file system. Thus, it it not 
+reliable with large data input and retrieval. 
+
+Operation 10,000 
+Rows 
+50,000 
+Rows 
+100,000 
+Rows 
+Data Population 
+(Seconds) 
+6.06 38.84 60 
+Search (Seconds) 0.02 0.06 0.08

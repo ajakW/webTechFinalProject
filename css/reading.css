@@ -1,0 +1,143 @@
+/* ===========================
+   READING VIEW STYLES
+   =========================== */
+
+/* Reading Container */
+.reading-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+/* Reading Header - Sticky */
+.reading-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: #FFFFFF;
+    border-radius: 0 0 8px 8px;
+    /* Rounded only at bottom when sticky acts like a top bar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.reading-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Progress Info */
+.progress-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+#progress-text {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #1A1A1A;
+    margin-bottom: 8px;
+}
+
+#wpm-display,
+#reading-time-display {
+    font-size: 0.95em;
+    color: #666;
+}
+
+#status-message {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #28a745;
+    font-weight: 500;
+}
+
+/* Reading Content */
+.reading-content {
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.reading-content #output {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #E8C99B;
+}
+
+/* Output / Bionic Text */
+#output {
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #444444;
+    /* Dark grey for non-bold text */
+}
+
+#output strong {
+    color: #000000;
+    /* Pure Black for bold text */
+    font-weight: 800;
+    /* Extra Bold */
+    background-color: transparent;
+}
+
+/* Word Tokens */
+.word-token {
+    display: inline;
+    transition: opacity 0.3s;
+}
+
+.word-token:hover {
+    background-color: rgba(91, 143, 163, 0.1);
+}
+
+.read-token {
+    opacity: 0.6;
+}
+
+.read-token strong {
+    opacity: 0.7;
+}
+
+.current-token {
+    background-color: rgba(91, 143, 163, 0.15);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.current-token strong {
+    opacity: 1;
+    font-weight: 700;
+}
+
+/* Paragraph Fading */
+.reading-paragraph {
+    transition: opacity 1.2s ease;
+    opacity: 1;
+}
+
+.reading-paragraph.read {
+    opacity: 0.3;
+}
+
+/* Hidden Text Content */
+#hiddenTextContent {
+    display: none;
+}

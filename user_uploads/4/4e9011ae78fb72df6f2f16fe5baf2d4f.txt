@@ -1,0 +1,35 @@
+Report: 
+The relationships between age, height, and weight show several insights. The age-height scatter 
+plot reveals a non-linear relationship where height increases until approximately age 20 before 
+stabilizing, reflecting typical human growth patterns. The weight distribution shows a vast 
+variation across the population, with values clustering between 55-75 kg, as shown in the 
+histogram. Notably, this dataset has no strong direct correlation between height and weight. 
+Key Insights from Visualizations 
+1. From Age-Height Scatter Plot: A clear height ceiling exists around 180 cm, with height 
+stabilization occurring after age 20. That demonstrates that while people of different ages 
+can reach similar heights, there tends to be a biological age with the maximum height. 
+2. From Weight Bar Chart: Individual weight comparison shows significant variation, with 
+clear outliers identifiable; for example, Imran (18 kg) and Katherine (82 kg) represent the 
+extremes of the weight distribution. 
+3. From Weight Histogram: The distribution reveals a negative skew, indicating more 
+people with above-average weights than below-average weights in the sample. This insight 
+also helps note that as you grow, you tend to add more weight. 
+Pandas and NumPy in AI Applications 
+These libraries are essential for AI applications because: 
+• They provide efficient data structures for numerical computations and large dataset 
+handling. 
+• Pandas excel at data cleaning, transformation, and feature engineering. 
+
+• NumPy's mathematical functions and broadcasting capabilities are crucial for 
+implementing machine learning algorithms. 
+Example 3D NumPy Array 
+
+The three methods of checking data in pandas frame; 
+• df.head() – for a quick overview of the data by displaying the first few rows of data. 
+• df.info() – to get data frame information by showing data types and non-null counts 
+• df.describe() – to generate a statistical summary. 
+
+Understanding and use of inplace; 
+The inplace determines whether an operation changes the existing DataFrame or returns a new 
+one. Use inplace=True to make the changes reflected on the original DataFrame because it is 
+memory-efficient as it does not create a copy.

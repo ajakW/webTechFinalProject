@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Color Palette - Restored Original Theme */
+    --primary: #5B8FA3;
+    /* Original Teal */
+    --primary-dark: #4A7A8F;
+    /* Darker Teal */
+    --secondary: #D4A574;
+    /* Original Gold/Tan */
+    --accent: #7A9B7A;
+    /* Original Green Accent */
+
+    /* Gradients (Subtle versions of original colors) */
+    --gradient-primary: linear-gradient(135deg, #5B8FA3 0%, #4A7A8F 100%);
+    --gradient-secondary: linear-gradient(135deg, #D4A574 0%, #C49564 100%);
+    --gradient-dark: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
+    --gradient-bg: linear-gradient(180deg, #FAF8F3 0%, #F5F2EB 100%);
+    /* Original Cream Background */
+
+    /* UI Colors */
+    --text-main: #2C2C2C;
+    --text-muted: #666666;
+    --text-light: #888888;
+    --bg-body: #FAF8F3;
+    --surface: rgba(255, 255, 255, 0.9);
+    --surface-glass: rgba(255, 255, 255, 0.7);
+    --border: #E8C99B;
+    /* Soft Gold Border */
+
+    /* Effects */
+    --shadow-sm: 0 4px 6px -1px rgba(91, 143, 163, 0.1);
+    --shadow-md: 0 10px 15px -3px rgba(91, 143, 163, 0.15);
+    --shadow-lg: 0 20px 25px -5px rgba(91, 143, 163, 0.2);
+    --shadow-glow: 0 0 20px rgba(91, 143, 163, 0.3);
+    --glass-blur: blur(10px);
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --radius-sm: 8px;
+    --radius-pill: 9999px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--gradient-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Layout Containers */
+.container,
+.reading-container,
+.dashboard-container,
+.auth-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reading-container,
+.dashboard-container {
+    padding-top: 100px;
+    /* Space for fixed navbar */
+}

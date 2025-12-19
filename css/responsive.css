@@ -1,0 +1,348 @@
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+
+    /* Story Windows */
+    .story-title {
+        font-size: 2.5em;
+    }
+
+    .story-description {
+        font-size: 1.1em;
+    }
+
+    .typing-demo {
+        font-size: 1.1em;
+        padding: 20px;
+    }
+
+    /* Story Actions */
+    .story-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-story-primary,
+    .btn-story-secondary {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    /* Devices Layout */
+    .devices-layout {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .device-mockup {
+        transform: none !important;
+    }
+
+    .device-mockup:hover {
+        transform: scale(1.05) !important;
+    }
+
+    .showcase-header h2 {
+        font-size: 2.5em;
+    }
+
+    .app-subtitle {
+        font-size: 1.2em;
+    }
+
+    .phone-frame {
+        width: 160px;
+        height: 280px;
+    }
+
+    .tablet-frame {
+        width: 240px;
+        height: 320px;
+    }
+
+    .laptop-frame {
+        width: 280px;
+        height: 180px;
+    }
+
+    .laptop-frame::after {
+        width: 300px;
+    }
+
+    /* Final CTA */
+    .final-cta-section h2,
+    .cta-content h2 {
+        font-size: 2.2em;
+    }
+
+    .btn-primary-large,
+    .btn-secondary-large {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Upload Options */
+    .upload-options {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .upload-actions {
+        flex-direction: column;
+    }
+
+    .btn-convert {
+        max-width: none;
+        width: 100%;
+    }
+
+    /* Session Cards */
+    .session-header {
+        flex-direction: column;
+    }
+
+    /* Dashboard */
+    .dashboard-layout {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .dashboard-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 15px;
+    }
+
+    .sidebar-profile {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .sessions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .navbar h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Adjust body padding for taller navbar */
+    .reading-container,
+    .dashboard-container,
+    .auth-container,
+    .admin-container {
+        padding-top: 120px;
+    }
+
+    .story-window:first-of-type {
+        padding-top: 110px;
+    }
+
+    /* Story Title */
+    .story-title {
+        font-size: 2em;
+    }
+
+    .story-description {
+        font-size: 1em;
+    }
+
+    /* Demo Container */
+    .demo-container {
+        padding: 20px;
+    }
+
+    /* Upload Section */
+    .upload-section {
+        padding: 20px;
+    }
+
+    .upload-dropzone {
+        padding: 30px 15px;
+    }
+
+    /* Admin Stats */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* User Table */
+    .user-table-container {
+        padding: 15px;
+    }
+
+    .user-table {
+        font-size: 0.9em;
+    }
+
+    .user-table th,
+    .user-table td {
+        padding: 8px;
+    }
+
+    /* Action Buttons */
+    .action-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-sm {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+/* ===========================
+   PRINT STYLES
+   =========================== */
+@media print {
+
+    .navbar,
+    .scroll-progress,
+    .demo-overlay,
+    .story-actions,
+    .upload-section,
+    .btn-resume,
+    .btn-pause,
+    .btn-export,
+    .btn-delete,
+    .reading-controls,
+    .reading-header,
+    #status-message {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        padding-top: 0;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .reading-container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .reading-content,
+    .session-card {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    #output {
+        font-size: 12pt;
+        line-height: 1.6;
+        color: #000;
+    }
+
+    #output strong {
+        font-weight: 700;
+        color: #000;
+    }
+
+    .word-token {
+        display: inline;
+        background: none !important;
+        opacity: 1 !important;
+    }
+
+    .read-token,
+    .current-token {
+        background: none !important;
+        opacity: 1 !important;
+    }
+
+    .reading-paragraph,
+    .reading-paragraph.read {
+        opacity: 1 !important;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ===========================
+   PDF EXPORT OVERRIDES
+   =========================== */
+.pdf-exporting {
+    background: white !important;
+}
+
+#output.pdf-exporting,
+.pdf-exporting #output {
+    opacity: 1 !important;
+    color: #000 !important;
+    background: white !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.pdf-exporting .reading-paragraph,
+.pdf-exporting .reading-paragraph.read {
+    opacity: 1 !important;
+    color: #000 !important;
+    transition: none !important;
+    animation: none !important;
+    background: transparent !important;
+    line-height: 1.6 !important;
+    margin-bottom: 12px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    display: block !important;
+    margin-top: 0 !important;
+}
+
+.pdf-exporting .word-token,
+.pdf-exporting .read-token {
+    opacity: 1 !important;
+    display: inline !important;
+    background: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #000 !important;
+}
+
+.pdf-exporting strong {
+    color: #000 !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}

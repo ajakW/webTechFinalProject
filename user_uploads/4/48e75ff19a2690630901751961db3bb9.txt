@@ -1,0 +1,9 @@
+1. Does Excel allow both users to make edits simultaneously, or does it prevent one user 
+from modifying the cell? 
+It allows both users to edit simultaneously. 
+2. When both users save their changes, does Excel prompt a conflict resolution dialogue? 
+Yes, it prompted a conflict resolution dialogue for the other user to merge changes to 
+the document. 
+3. Does one partner’s changes get overwritten without warning? Or does Excel lock the 
+file for one partner while the other tries to make changes? 
+Yes, the other partner’s changes got overwritten without warning. And it did lock file.
